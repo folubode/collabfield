@@ -10,8 +10,13 @@
   </head>
 
   <body>
+
+
     <!-- To render natigation file, use the render method and pass partial’s path as an argument -->
     <%= render 'layouts/navigation' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
   </body>
