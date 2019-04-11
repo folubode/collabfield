@@ -67,10 +67,14 @@ gem 'devise'
 
 gem 'bootstrap_form'
 
-gem 'rspec-rails', '~> 3.6'
-gem 'factory_girl_rails'
-gem 'rails-controller-testing'
-gem 'headless'
-gem 'capybara'
-gem 'poltergeist'
-gem 'database_cleaner'
+group :development, :test do
+	gem 'rspec-rails', '~> 3.6'
+	gem 'factory_bot'
+	gem 'rails-controller-testing'
+	gem 'headless'
+	gem 'capybara'
+	gem 'poltergeist'
+	gem 'database_cleaner'
+end
+
+gem 'faker'
