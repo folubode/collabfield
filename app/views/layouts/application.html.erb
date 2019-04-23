@@ -20,5 +20,20 @@
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
+
+<span id="copyright-notice">&nbsp;&nbsp;&copy; 2010
+<script> 
+  // do display copyright
+  yr = new Date().getFullYear();
+  if (yr!=2010)
+  document.write("– "+yr);
+
+// To avoid TypeError: $(…).modal is not a function with bootstrap Modal
+  jQuery.noConflict();
+
+</script>&nbsp;olucube.com</span> 
+
+
+
   </body>
 </html>
